@@ -1,7 +1,8 @@
 import math
 
-#Time complexity: O(N + N)
-#Space complexity: O(N)
+
+# Time complexity: O(N + N)
+# Space complexity: O(N)
 def count_frequency(word_list):
     freq_dict = dict()
     for word in word_list:
@@ -9,7 +10,8 @@ def count_frequency(word_list):
 
     return freq_dict
 
-#Inner product between two vectors, where vectors are represented as dictionaries of (word, freq) pairs.
+
+# Inner product between two vectors, where vectors are represented as dictionaries of (word, freq) pairs.
 def inner_product(document_1, document_2):
     sum = 0.0
     for key in document_1:
@@ -17,6 +19,7 @@ def inner_product(document_1, document_2):
             sum += document_1[key] * document_2[key]
 
     return sum
+
 
 # The "distance" between two vectors is the angle between them.
 # If x = (x1, x2, ..., xn) is the first vector (xi = freq of word i) and y = (y1, y2, ..., yn) is the second vector,

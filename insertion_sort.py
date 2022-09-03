@@ -1,5 +1,5 @@
-#Time complexity: O(N^2). Each step is O(N) compares&swaps
-#Space complexity: O(1)
+# Time complexity: O(N^2). Each step is O(N) compares&swaps
+# Space complexity: O(1)
 def insertion_sort(array):
     for i in range(1, len(array)):
         j = i - 1

@@ -16,14 +16,14 @@ def find_peak_2D_helper(nums, l, r):
 
 def find_current_row(nums, current_column):
     current_row = 0
-    max = 0; # local max (i, j)
+    max = 0 # local max (i, j)
 
     for row in range(len(nums)):
         if nums[row][current_column] > max:
             max = nums[row][current_column]
             current_row = row
 
-    return current_row;
+    return current_row
 
 
 #Time complexity: O(log N)
